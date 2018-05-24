@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "166718037946",
+    "firebase_url": "https://watchwatchme-7d0e2.firebaseio.com",
+    "project_id": "watchwatchme-7d0e2",
+    "storage_bucket": "watchwatchme-7d0e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166718037946:android:8262784d2336825f",
+        "android_client_info": {
+          "package_name": "com.example.hiyoon.realtimetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166718037946-pku1jso30mtllhbrmcddar1m8f7r1pmh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hiyoon.realtimetest",
+            "certificate_hash": "2d33aefcf8ae571e7e0bf41e125dda8a78665044"
+          }
+        },
+        {
+          "client_id": "166718037946-bdh2phrpe3oi7l60j5ohldav6tjsnbvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-XtqESVCHvjrsq6MEDAWYMBS1ZCtQySs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166718037946-nrve1vhfqtk73bq37cap87cjmge96apa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "let.swift.WatchWatchMe"
+              }
+            },
+            {
+              "client_id": "166718037946-bdh2phrpe3oi7l60j5ohldav6tjsnbvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
