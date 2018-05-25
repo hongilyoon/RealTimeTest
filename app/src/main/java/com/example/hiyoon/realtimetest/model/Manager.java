@@ -8,15 +8,19 @@ public class Manager {
     private String name;
     private String phone;
     private String token;
+    private String id;
+    private String loginTypeAndId;
 
     public Manager() {
     }
 
-    public Manager(String loginType, String name, String phone, String token) {
+    public Manager(String loginType, String name, String phone, String token, String id) {
         this.loginType = loginType;
         this.name = name;
         this.phone = phone;
         this.token = token;
+        this.id = id;
+        this.loginTypeAndId = String.format("%s_%s", loginType, id);
     }
 
     public String getLoginType() {
@@ -49,5 +53,33 @@ public class Manager {
 
     public void setToken(String token) {
         this.token = token;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getLoginTypeAndId() {
+        return loginTypeAndId;
+    }
+
+    public void setLoginTypeAndId(String loginTypeAndId) {
+        this.loginTypeAndId = loginTypeAndId;
+    }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "loginType='" + loginType + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", token='" + token + '\'' +
+                ", id='" + id + '\'' +
+                ", loginTypeAndId='" + loginTypeAndId + '\'' +
+                '}';
     }
 }
