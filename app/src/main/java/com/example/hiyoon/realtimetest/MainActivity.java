@@ -4,13 +4,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.hiyoon.realtimetest.model.Client;
 import com.example.hiyoon.realtimetest.model.Manager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -108,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         // TODO 해당 아이디에 해당하는 값이 여러명 검색된다면??
-                        for (DataSnapshot snapshot: dataSnapshot.getChildren()) {
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             Manager manager = snapshot.getValue(Manager.class);
                             Log.d("MainActivity", manager.toString());
                         }
